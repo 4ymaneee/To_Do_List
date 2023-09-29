@@ -58,8 +58,11 @@ body {
     cursor: pointer;
     background-color: rgb(11, 182, 125);
     color: white;
+    transition: 0.3s;
 }
-
+#newtask #add:hover {
+    background-color: rgb(6, 153, 104);
+}
 #tasks {
     background-color: white;
     width: 100%;
@@ -83,6 +86,7 @@ body {
 #task #taskcontent {
     font-size: 15px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 #task .deletetask {
@@ -94,6 +98,12 @@ body {
     border: none;
     cursor: pointer;
     outline: none;
-
+    transition: 0.3s;
 }
 
+#task .deletetask:hover {
+    background-color: rgb(194, 6, 6);
+}
+.completed {
+    text-decoration: line-through;
+}

@@ -2,6 +2,7 @@ let add = document.getElementById("add");
 let enterTask = document.getElementById("entertask");
 let tasks = document.getElementById("tasks");
 
+
 //validate input field
 function addButton() {
     if (enterTask.value.length == 0) {
@@ -21,12 +22,14 @@ function addButton() {
                 this.parentNode.remove();
             };
         }
-    }
+        }
+
+    clearData()
 }
 
+//clear data
+function clearData() {
+    enterTask.value = ''
+}
 
-
-
-
-// Use getElementsByClassName to select elements by class
 
